@@ -1,0 +1,317 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family:sans-serif;
+}
+
+#navbar {
+  width: 100;
+  margin: auto;
+  display: flex;
+  line-height: 60px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background:rgb(224, 247, 201);
+  z-index: 1;
+
+}
+#logo {
+  font-size: 36px;
+  font-weight: 70;
+  color: beige;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span {
+  color: orange;
+}
+
+.navbar-toggler span {
+  color: orange;
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+.nav-item .nav-link:hover {
+  background: transparent;
+  color: orange;
+}
+.navbar form button {
+  background: rgb(72, 36, 232);
+  color: white;
+  border: none;
+}
+
+.home {
+  width: 100%;
+  height: 120vh;
+  background-image: url(assets/gambarG.jpg);
+  background-image: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.home .content h3 {
+  color:rgb(224, 247, 201);
+  font-size: 30px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+.home .content h2{
+  color:orange;
+  font-size: 70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+.changecontent::after{
+  content: ' ';
+  color: orange;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "METSA KOPI";}
+    10%{content: "FOREST KOPI";}
+    20%{content: "TAIN FOREST";}
+    30%{content: "RAINBOW SLIDE";}
+    40%{content: "KOLAM RENANG";}
+    0%{content: "VILLA KORARA";}
+}
+
+.home .content p{ 
+  color: #f9f9f9;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a{
+  padding: 10px;
+  background: rgb(224, 247, 201);
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover{
+  background: #f9f9f9;
+  color: black;
+}
+@media(max-width:850px) {
+  .home{
+    background-color: 50%;
+  }
+  
+}
+@media(max-width:850px) {
+  .home .content h5{
+   font-size: 25px;
+  }
+  .home .content h1{
+    font-size: 25px;
+   }
+   .home .content p{
+    font-size: 13px;
+   }
+}
+
+.contak{
+  background: rgb(224, 247, 201);
+  padding: 50px;
+}
+.main-text h1{
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600px;
+}
+.main-text h1 span{
+  color: orange;
+}
+
+.contak .card{
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px rgb(0, 8, 11);
+}
+
+.contak .row{
+  margin-top: 30px;
+}
+
+.contak form input{
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 5px -6px black;
+}
+.contak form textarea{
+  border: none;
+  border-radius: 10%;
+  resize: none;
+  text-shadow: 0px 0px 5px -6px black;
+  height: 150px;
+}
+.contak .submit{
+  width: 100px;
+  font-size: 16px;
+  font-weight: 550;
+  background: blue;
+  color: white;
+  margin-top: 10px;
+  transition: 0.5s;
+
+}
+
+.contak .submit:hover{
+  width: 150px;
+}
+@media (max-width:765px){
+  .contak{
+    padding:0;
+  }
+  .main-text h1{
+    padding: 20px;
+  }
+}
+
+.main-txt h1{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+
+}
+.main-txt h1 span {
+  color: rgb(70, 132, 8);
+}
+.about .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: black 0px 4px 12px;
+
+}
+.about .card .img{
+  border-radius: 5px;
+}
+
+.about .card .card-body{
+  background: transparent;
+
+}
+.about .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.about .card .card-body p{
+  font-size: 15px;
+}
+
+.chacked{
+  color: orange;
+}
+.star i{
+  font-size: 15px;
+}
+
+.about .card .card-body h6{
+  font-size: 15px;
+}
+.galerry{
+  margin-top: 10px;
+}
+
+.galerry .card{
+  border-radius: 10px;
+  box-shadow: black;
+  cursor: pointer;
+}
+.galerry .card img{
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.galerry .card img:hover{
+  transform: scale(1.1);
+}
+
+.services{
+  background: white;
+  margin-top: 50px;
+}
+.services .card{
+  box-shadow: rgba(0,0,0,1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+.services .card i{
+  font-size: 89px;
+  text-align: center;
+  color: orange;
+  margin-top: 20px;
+}
+.services .card .card-body h3{
+  font-weight: 600;
+}
+
+#footer{
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+#footer h1{
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 0px 1px black;
+}
+
+#footer h1 span{
+  color: rgb(70, 132, 8);
+}
+.social-links i{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover{
+  background: orange;
+
+}
+
+
+
+
